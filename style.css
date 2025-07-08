@@ -1,0 +1,544 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #b74b4b;
+  border-radius: 10px;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* Main container inside the nav */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Links */
+nav .links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav .links a {
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav .links a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #b74b4b;
+  transition: 0.4s;
+}
+
+nav .links a:hover::before {
+  width: 100%;
+}
+
+/* Hamburger icon for mobile */
+.hamburg {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Dropdown menu (for mobile) */
+.dropdown {
+  display: none;
+  flex-direction: column;
+  background: #000;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  padding: 20px;
+  z-index: 998;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.dropdown.show {
+  display: flex;
+  opacity: 1;
+}
+
+.dropdown .link {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #333; /* Adds a border between items */
+}
+
+.dropdown .link a {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px; /* Adds some padding around the links */
+  display: block; /* Makes the link a block-level element for easy clickability */
+  transition: background-color 0.3s ease; /* Adds smooth transition for hover */
+}
+
+/* Add hover effect for links */
+.dropdown .link a:hover {
+  background-color: #b74b4b; /* Red color on hover */
+  color: #fff; /* Keeps text color white */
+}
+
+/* Center the links on mobile */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  /* Make the hamburger icon visible on mobile */
+  .hamburg {
+    display: block;
+  }
+
+  /* Links on mobile are hidden until clicked */
+  .links {
+    display: none;
+  }
+
+  .dropdown {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the links */
+  }
+
+  .dropdown.show {
+    display: flex;
+  }
+
+  .dropdown .link {
+    width: 100%;
+  }
+}
+
+
+/* Hero Section */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 80px 60px;
+  min-height: 100vh;
+}
+.main-container .image img {
+  width: 300px;
+  height: auto;
+}
+.main-container .content {
+  max-width: 600px;
+  margin-left: 40px;
+}
+.main-container .content h1 {
+  font-size: 2.5rem; /*TxtSize*/
+  margin-bottom: 15px;
+}
+.main-container .content h1 span {
+  color: #b74b4b;
+}
+.typewriter {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.typewriter-text {
+  color: #b74b4b;
+  font-weight: 600;
+  display: inline-block;
+  border-right: 2px solid #b74b4b;
+  padding-left: 5px;
+  animation: blinkCursor 0.8s steps(1) infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #b74b4b; }
+}
+
+.social-links a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-links a:hover {
+  color: #b74b4b;
+  transform: scale(1.2);
+}
+
+/* Button Styling */
+.btn button {
+  background: #b74b4b;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 25px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Continuous Glowing Effect on Button's Sides */
+.btn button {
+  box-shadow: 0 0 15px 5px rgba(183, 75, 75, 0.8), 0 0 25px 8px rgba(255, 255, 0, 0.8); /* Red and Yellow glowing */
+  animation: glowing 1.5s ease-in-out infinite; /* Continuous animation for glow effect */
+}
+
+/* Glowing Animation */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 15px 5px rgba(183, 75, 75, 0.8), 0 0 25px 8px rgba(255, 255, 0, 0.8); /* Initial Red and Yellow */
+  }
+  50% {
+    box-shadow: 0 0 25px 5px rgba(255, 140, 0, 0.8), 0 0 40px 8px rgba(255, 0, 0, 0.8); /* Transition to more orange and red */
+  }
+  100% {
+    box-shadow: 0 0 15px 5px rgba(183, 75, 75, 0.8), 0 0 25px 8px rgba(255, 255, 0, 0.8); /* Return to initial Red and Yellow */
+  }
+}
+
+
+/* About Section */
+.about {
+  padding: 100px 80px;
+  background: #111;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Make sure it takes up at least the full viewport height */
+  
+}
+
+.about .content {
+  max-width: 1200px;
+  width: 100%; /* Ensure the content uses the full available width */
+  text-align: center; /* Center text inside .content */
+}
+
+.about .title span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #b74b4b;
+  display: block; /* Ensure the span takes up the full width for centering */
+  text-align: center; /* Center the title text */
+  
+}
+
+.about-box {
+  margin-top: 40px;
+  background: #222; /* Dark background for the box */
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  color: #ccc;
+  text-align: left; /* Ensure text inside box is left-aligned */
+}
+
+.about-text {
+  /*flex: 2;*/
+  text-align: justify; /* Justify the text */
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-box p:first-child {
+  margin-top: 0;
+}
+
+
+
+/* Skills Section (What is this?) */
+.skills {
+  padding: 100px 80px;
+  background: #000;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Make sure it takes up at least the full viewport height */
+}
+
+.skills .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%; /* Ensure the content uses the full available width */
+  text-align: center; /* Center text inside .content */
+}
+
+.skills .title span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #b74b4b;
+  display: block; /* Ensure the span takes up the full width for centering */
+  text-align: center; /* Center the title text */
+}
+
+.skills-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Makes it responsive */
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skills-details .box {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.skills-details .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skills-details .box .topic {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #b74b4b;
+}
+
+.skills-details .box p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Disclaimer Section */
+.disclaimer {
+  padding: 100px 80px;
+  background: #111;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Make sure it takes up at least the full viewport height */
+}
+
+.disclaimer .content {
+  max-width: 1200px;
+  width: 100%; /* Ensure the content uses the full available width */
+  text-align: center; /* Center text inside .content */
+}
+
+.disclaimer .title span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #b74b4b;
+  display: block; /* Ensure the span takes up the full width for centering */
+  text-align: center; /* Center the title text */
+}
+
+/* Container for the disclaimer text */
+.disclaimer-box {
+  margin-top: 40px;
+  background: #222; /* Dark background for the box */
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  color: #ccc;
+  line-height: 1.8;
+  text-align: justify; /* Justify the text */
+}
+
+.disclaimer-box p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.disclaimer-box p:first-child {
+  margin-top: 0;
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 100px 80px;
+  background: #000;
+  text-align: center;
+}
+
+.contact .title span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #b74b4b;
+}
+
+.contact .text {
+  margin-top: 30px;
+  color: #ccc;
+}
+
+.contact .text .topic {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact .text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center; /* Justify the text */
+}
+
+.contact .button button {
+  background: #b74b4b;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact .button button:hover {
+  background: #a03a3a;
+}
+
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+}
+footer span {
+  font-size: 0.95rem;
+  color: #888;
+}
+footer a {
+  color: #b74b4b;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  nav {
+    padding: 0 40px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-container .content {
+    margin: 30px 0 0;
+  }
+  .about-details {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-details .right {
+    margin-top: 20px;
+  }
+  .skills-details {
+    flex-direction: column;
+  }
+  .skills-details .boxes {
+    grid-template-columns: 1fr;
+  }
+  .services .boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburg {
+    display: block;
+  }
+
+  nav .links {
+    display: none;
+  }
+
+  .dropdown {
+    display: flex;
+  }
+
+  .services .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .about-details .left img {
+    width: 80%;
+  }
+
+  .main-container .image img {
+    width: 220px;
+  }
+
+  .main-container {
+    padding: 120px 40px 60px;
+  }
+
+  .skills, .about, .services, .contact {
+    padding: 80px 40px;
+  }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon link -->
+<link rel="icon" type="image/x-icon" href="bilog.png">
+
+  <title>Responsive Homepage</title>
+</head>
+<body>
+
+  <!--Nav menu-->
+  <nav>
+    <div class="nav-container">
+      <div class="=logo">
+        <img src="logo.png" width="50" height="auto">
+        <!--<span>AzTV</span> -->
+      </div>
+      <div class="links">
+        <div class="link"> <a href="AzTV.html">Live Channels</a></div>
+        <div class="link"> <a href="#about">About</a></div>
+        <div class="link"> <a href="#skills">What is this?</a></div>
+        <div class="link"> <a href="#disclaimer">Disclaimer</a></div>
+        <div class="link"> <a href="#contact">Contact</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="link">
+        <a href="AzTV.html">Live Channels</a>
+        <a href="#about">About</a>
+        <a href="#skills">What is this?</a>
+        <a href="#disclaimer">Disclaimer</a>
+        <a href="#contact">Contact</a>
+        <i class="fa-solid fa-xmark cance" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="main-container">
+      <div class="image" data-aos="fade-right">
+        <img src="logoaz.png" alt="">
+      </div>
+      <div class="content" data-aos="fade-left">
+        <h1 data-aos="fade-left">
+          AzTV 
+          <span>Tune Into Live Channels</span>
+        </h1>
+        <div class="typewriter">
+          Watch
+          <span class="typewriter-text"></span>
+          <label for=""></label>
+        </div>
+        <p>Enjoy instant access to a variety of channels with no sign-up required, available anytime, anywhere.</p>
+        
+        <div class="btn"> 
+          <a href="AzTV.html"> <!-- Replace this with your target page URL -->
+            <button>Start Watching</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<section class="about" id="about">
+  <div class="content">
+    <div class="title"><span>About AzTV</span></div>
+    <div class="about-box">
+      <div class="about-text">
+        <p>
+          Welcome to AzTV, your ultimate destination for watching live TV channels from around the globe, right at your fingertips. From local to international channels, our platform provides a seamless streaming experience that connects you to a world of live content.
+        </p>
+        <p>
+          Our service is designed to be simple, reliable, and fast, ensuring that you never miss out on anything happening around the world. At AzTV, we believe in providing our users with the best viewing experience possible. With a wide range of live channels available, from news and sports to entertainment and lifestyle.
+        </p>
+        <p>
+          Our website is built with user experience in mind. The interface is clean, intuitive, and easy to navigate, so you can quickly find the channel or program you're looking for. With the latest streaming technology, we ensure that you have access to high-quality broadcasts, with minimal buffering and interruptions.
+        </p>
+        <p>
+          Our mission is to make live streaming accessible to everyone, wherever they are. We want you to enjoy your favorite programs in real-time, without any hassle or frustration. By continuously updating our platform and adding new channels, we aim to stay at the forefront of the ever-evolving world of live streaming.
+        </p>
+        <p>
+          We are excited to be a part of your viewing experience and look forward to bringing you the best live channels on the web.
+        </p>
+        <p>
+          If you have any questions or suggestions, feel free to reach out to us. We're always here to help and improve your streaming journey!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="skills" id="skills">
+  <div class="content">
+    <div class="title"><span>What is this?</span></div>
+    <div class="skills-details">
+      <!-- Instant Access Box -->
+      <div class="box">
+        <div class="topic">Instant Access</div>
+        <p>No sign-ups or subscriptions needed—start watching right away!</p>
+      </div>
+
+      <!-- Wide Selection Box -->
+      <div class="box">
+        <div class="topic">Wide Selection</div>
+        <p>Access a wide array of choices, from local and International Channels.</p>
+      </div>
+
+      <!-- Easy to Use Box -->
+      <div class="box">
+        <div class="topic">Easy to Use</div>
+        <p>Switch between options with just a click.</p>
+      </div>
+
+      <!-- Completely Free Box -->
+      <div class="box">
+        <div class="topic">Completely Free. No Interruptions.</div>
+        <p>The best part? It’s entirely free, without any ads!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="disclaimer" id="disclaimer">
+  <div class="content">
+    <div class="title"><span>Disclaimer</span></div>
+    <div class="disclaimer-box">
+      <p>
+        While we strive to provide you with the best viewing experience, please be aware that we do not verify the legality of the channels and sources that are streamed through our platform.
+      </p>
+      <p>
+        We claim no responsibility for the content accessed through our service. Users are encouraged to exercise discretion and verify the legality of the content in their respective regions and jurisdictions.
+      </p>
+      <p>
+        By using our service, you acknowledge and agree that you are solely responsible for your viewing choices and any legal implications that may arise from accessing such content.
+      </p>
+      <p>
+        We do not own, control, or endorse any of the channels or content provided on our platform. The inclusion of such content is for convenience and does not constitute approval or authorization for distribution. It is the user's responsibility to ensure they comply with all applicable laws while using the service.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title">
+      <span>Contact</span>
+    </div>
+    <div class="text">
+      <div class="topic">Got Questions or Feedback?</div>
+      <p>
+        We value your experience with us! If you have any questions, feedback, or need support, just send us a message. We’re happy to assist you.
+      </p>
+      <div class="button">
+        <a href="mailto:jhinshira@gmail.com"><button>Send Email</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">AzJamez</a> &#169; 2025 All Rights Reserved</span>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 800 });
+
+function hamburg() {
+  let dd = document.querySelector(".dropdown");
+  dd.classList.add("show"); // Add class to show the dropdown
+}
+
+function cancel() {
+  let dd = document.querySelector(".dropdown");
+  dd.classList.remove("show"); // Remove the class to hide the dropdown
+}
+
+
+const roles = ["Local Channels", "International Channels", "Anytime!"];
+let r = 0, c = 0, del = false;
+function typeLoop() {
+  const el = document.querySelector(".typewriter-text");
+  let text = roles[r];
+  if (!del) el.textContent = text.substring(0, c++);
+  else el.textContent = text.substring(0, c--);
+  if (c === text.length + 1) { del = true; setTimeout(typeLoop, 800); return; }
+  if (c === 0) { del = false; r = (r + 1) % roles.length; }
+  setTimeout(typeLoop, del ? 60 : 120);
+}
+typeLoop();
+
+const bars = document.querySelectorAll(".skill-progress");
+window.addEventListener("scroll", () => {
+  bars.forEach(bar => {
+    const top = bar.getBoundingClientRect().top, h = window.innerHeight;
+    if (top < h * 0.8 && bar.style.width === "0px") {
+      bar.style.width = bar.dataset.progress;
+    }
+  });
+});
+</script>
+</body>
+</html>
