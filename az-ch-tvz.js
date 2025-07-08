@@ -89,7 +89,14 @@
         logo: 'https://iconape.com/wp-content/files/px/285466/svg/animax-logo-logo-icon-png-svg.png'
       },
 
-
+      tapmovies: {
+        name: 'Tap Movies',
+        type: 'clearkey',
+        manifestUri: 'https://qp-pldt-live-grp-06-prod.akamaized.net/out/u/cg_tapmovies_hd1.mpd',
+        keyId: '71cbdf02b595468bb77398222e1ade09',
+        key: 'c3f2aa420b8908ab8761571c01899460',
+        logo: 'https://cms.cignal.tv/Upload/Images/Tap-movies.jpg'
+      },
 
       tapactionflix: {
         name: 'Tap Action Flix',
@@ -301,13 +308,6 @@
         logo: 'https://th.bing.com/th/id/R.743cd8b9fc154d6ae88ad250cbda5f5d?rik=pXna8%2bXXTgQNXQ&riu=http%3a%2f%2fvignette2.wikia.nocookie.net%2flogopedia%2fimages%2fc%2fcd%2fPBA_Rush_logo.png%2frevision%2flatest%3fcb%3d20161115101642&ehk=o2xvROtRxUDG9q%2beLGFUpfS2%2bcbtn%2fphEqWCsyPHnNM%3d&risl=&pid=ImgRaw&r=0'
       },
 
-      fxsprt: {
-        name: 'Fox Sports',
-        type: 'hls',
-        manifestUri: 'https://stitcher.pluto.tv/stitch/hls/channel/5a74b8e1e22a61737979c6bf/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=1ac1961b-31ed-11f0-ac4f-d2cb770a341a',
-        logo: 'https://images.seeklogo.com/logo-png/5/2/fox-sports-logo-png_seeklogo-57162.png?v=1956071233450768888'
-      },
-
       nbaph: {
         name: 'NBA TV PH',
         type: 'clearkey',
@@ -385,6 +385,7 @@
         key: '8cb209f1828431ce9b50b593d1f44079',
         logo: 'https://toppng.com/uploads/preview/dreamworks-logo-dreamworks-animation-logo-11563201748udwkzchrdf.png'
       },
+
 
       fashiontv: {
         name: 'Fashion TV',
