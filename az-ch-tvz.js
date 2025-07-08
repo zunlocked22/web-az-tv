@@ -301,10 +301,10 @@
         logo: 'https://th.bing.com/th/id/R.743cd8b9fc154d6ae88ad250cbda5f5d?rik=pXna8%2bXXTgQNXQ&riu=http%3a%2f%2fvignette2.wikia.nocookie.net%2flogopedia%2fimages%2fc%2fcd%2fPBA_Rush_logo.png%2frevision%2flatest%3fcb%3d20161115101642&ehk=o2xvROtRxUDG9q%2beLGFUpfS2%2bcbtn%2fphEqWCsyPHnNM%3d&risl=&pid=ImgRaw&r=0'
       },
 
-      fxtubi: {
+      fxsprt: {
         name: 'Fox Sports',
         type: 'hls',
-        manifestUri: 'https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5a74b8e1e22a61737979c6bf/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c28f173-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=46a3b8ff-5a4a-4952-bb4d-9461224acd54',
+        manifestUri: 'https://stitcher.pluto.tv/stitch/hls/channel/5a74b8e1e22a61737979c6bf/master.m3u8?deviceType=web&servertSideAds=false&deviceMake=safari&deviceVersion=1&deviceId=spencer&appVersion=1&deviceDNT=0&deviceModel=web&sid=1ac1961b-31ed-11f0-ac4f-d2cb770a341a',
         logo: 'https://images.seeklogo.com/logo-png/5/2/fox-sports-logo-png_seeklogo-57162.png?v=1956071233450768888'
       },
 
