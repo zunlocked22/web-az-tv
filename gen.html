@@ -62,7 +62,7 @@
   </style>
 </head>
 <body>
-  <h1>🎟️Generate Web-AZTV Url</h1>
+  <h1>🎟️For OTT Nav.</h1>
   <button onclick="generateToken()">Generate Url</button>
 
   <div id="output" class="usage hidden"></div>
@@ -101,7 +101,7 @@
 
     function copyToClipboard() {
       navigator.clipboard.writeText(currentTokenUrl).then(() => {
-        document.getElementById("copyBtn").textContent = "✅ Copied!";
+        document.getElementById("copyBtn").textContent = "✅ Copied! Paste it to OTT";
         setTimeout(() => {
           document.getElementById("copyBtn").textContent = "📋 Copy";
         }, 1500);
